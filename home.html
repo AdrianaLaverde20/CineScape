@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=charset">
+    <title>CINESCAPE | INICIO</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <section id="con-home">
+        <div id="panel-lateral">
+            <button onclick="cerrarPanel()">
+            <img src="img/menu.png" alt="Icon Menu">
+            </button>
+            <h2>Editar Mi Cuenta</h2>
+            <hr>
+            <ul>
+                <a href="#">-Home</a>
+                <a href="#">-Aventuras</a>
+                <a href="#">-Animadas</a>
+                <a href="#">-Drama</a>
+                <a href="#">-Comedia</a>
+                <a href="#">-Ficción</a>
+                <a href="#">-Nacionales</a>
+            </ul>
+            <a class="cerrarSesion" href="#">Cerrar Sesión</a>
+        </div>
+        <div class="header">
+            <a href="#" onclick="cerrarPanel()"><img src="img/menu.png" alt="Icon Menu"></a>
+            <a href="#"><img src="img/icon-logo.png" alt="Icon Menu"></a>
+            <a href="#"><img src="img/user.png" alt="Icon Menu"></a>
+        </div>
+        <div class="filtros">
+            <button class="active">Aventuras</button>
+            <button>Animadas</button>
+            <button>Drama</button>
+        </div>
+        <p id="copy-category">
+            Descubre emocionates peliculas de aventura llenas de accion, peligro y emocion 
+        </p>
+
+        <div id="cont-aventuras">
+            <h2>Estrenos:</h2>
+            <hr>
+            <div class="cont-caratulas">
+                <button class="caratula" onclick="abrirPelicula1()">
+                    <img src="img/guardianes3.jpg" alt="">
+                </button>
+                <button class="caratula" onclick="abrirPelicula()">
+                    <img src="img/mariobros.jpg" alt="">
+                </button>
+                <button class="caratula" onclick="abrirPelicula2()" >
+                    <img src="img/flash.jpg" alt="">
+                </button>
+            </div>
+        </div>
+        <div id="cont-aventuras">
+            <h2>Proximamente:</h2>
+            <hr>
+            <div class="cont-caratulas">
+                <button class="caratula" onclick="abrirPelicula3()">
+                    <img src="img/tar_drama.jpg" alt="">
+                </button>
+                <button class="caratula" onclick="abrirPelicula4()">
+                    <img src="img/megalodon.jpg" alt="">
+                </button>
+                <button class="caratula" onclick="abrirPelicula5()">
+                    <img src="img/barbie.jpeg" alt="">
+                </button>
+            </div>
+        </div>
+        
+        <div id="modal-pelicula" >
+            <button onclick="abrirPelicula()" class="modal">X</button>
+            <img src="img/mariobros.jpg" class="caratula-img" alt="Mario Bros">
+            <img src="img/boton_play1.png" class="btn-play" alt="Boton Play">
+            <h2>Mario Bros <br>
+                Bro. La Pelicula 
+            </h2>
+            <p>Estreno: 06-Abril-2023</p>
+            <p>Accion, Comedia</p>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sunt enim eligendi, ipsa voluptatibus, modi et incidunt pariatur blanditiis cumque quidem debitis odio tenetur molestias! Accusamus deleniti nihil culpa error sunt, numquam minus ea. Placeat ipsa deserunt culpa eaque dicta nesciunt!</p>
+        </div>
+        
+        <div id="modal-pelicula1" >
+            <button onclick="abrirPelicula1()" class="modal">X</button>
+            <img src="img/guardianes3.jpg" class="caratula-img" alt="Guardianes">
+            <img src="img/boton_play1.png" class="btn-play" alt="Boton Play">
+            <h2>Guardianes de la Galaxia <br>
+                Guar. La Pelicula 
+            </h2>
+            <p>Estreno: 04-Mayo-2023</p>
+            <p>Accion, Comedia</p>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sunt enim eligendi, ipsa voluptatibus, modi et incidunt pariatur blanditiis cumque quidem debitis odio tenetur molestias! Accusamus deleniti nihil culpa error sunt, numquam minus ea. Placeat ipsa deserunt culpa eaque dicta nesciunt!</p>
+        </div>
+
+        <div id="modal-pelicula2" >
+            <button onclick="abrirPelicula2()" class="modal">X</button>
+            <img src="img/flash.jpg" class="caratula-img" alt="flash">
+            <img src="img/boton_play1.png" class="btn-play" alt="Boton Play">
+            <h2>Flash<br>
+                Flash. La Pelicula 
+            </h2>
+            <p>Estreno: 05-febreo-2024</p>
+            <p>Accion</p>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sunt enim eligendi, ipsa voluptatibus, modi et incidunt pariatur blanditiis cumque quidem debitis odio tenetur molestias! Accusamus deleniti nihil culpa error sunt, numquam minus ea. Placeat ipsa deserunt culpa eaque dicta nesciunt!</p>
+        </div>
+        <div id="modal-pelicula3">
+            <button onclick="abrirPelicula3()" class="modal">X</button>
+            <img src="img/tar_drama.jpg" class="caratula-img" alt="tar">
+            <img src="img/boton_play1.png" class="btn-play" alt="Boton Play">
+            <h2>Tar Drama<br>
+                Tar. La Pelicula 
+            </h2>
+            <p>Estreno: 07-octubre-2023</p>
+            <p>Accion</p>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sunt enim eligendi, ipsa voluptatibus, modi et incidunt pariatur blanditiis cumque quidem debitis odio tenetur molestias! Accusamus deleniti nihil culpa error sunt, numquam minus ea. Placeat ipsa deserunt culpa eaque dicta nesciunt!</p>
+        </div>
+        <div id="modal-pelicula4" >
+            <button onclick="abrirPelicula4()" class="modal">X</button>
+            <img src="img/megalodon.jpg" class="caratula-img" alt="megalodon">
+            <img src="img/boton_play1.png" class="btn-play" alt="Boton Play">
+            <h2>Megalodon 2<br>
+                Meg2. La Pelicula 
+            </h2>
+            <p>Estreno: 04-agosto-2023</p>
+            <p>Accion</p>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sunt enim eligendi, ipsa voluptatibus, modi et incidunt pariatur blanditiis cumque quidem debitis odio tenetur molestias! Accusamus deleniti nihil culpa error sunt, numquam minus ea. Placeat ipsa deserunt culpa eaque dicta nesciunt!</p>
+        </div>
+        <div id="modal-pelicula5">
+            <button onclick="abrirPelicula5()" class="modal">X</button>
+            <img src="img/barbie.jpeg" class="caratula-img" alt="barbie">
+            <img src="img/boton_play1.png" class="btn-play" alt="Boton Play">
+            <h2>Barbie<br>
+                Barbie. La Pelicula 
+            </h2>
+            <p>Estreno: 07-julio-2023</p>
+            <p>Accion</p>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sunt enim eligendi, ipsa voluptatibus, modi et incidunt pariatur blanditiis cumque quidem debitis odio tenetur molestias! Accusamus deleniti nihil culpa error sunt, numquam minus ea. Placeat ipsa deserunt culpa eaque dicta nesciunt!</p>
+        </div>
+
+    </section>
+    <script src="js/main.js"></script>
+    
+</body>
+</html>
